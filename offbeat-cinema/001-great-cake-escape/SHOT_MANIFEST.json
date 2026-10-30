@@ -4,46 +4,88 @@
     "title": "The Great Cake Escape",
     "logline": "Four young skateboarders transport an absurdly enormous wedding cake through a sleepy European town while being pursued by the police.",
     "aspect_ratio": "4:3",
-    "master_resolution": [1440, 1080],
+    "master_resolution": [
+      1440,
+      1080
+    ],
     "fps": 24,
-    "target_runtime_s": [20, 25],
+    "target_runtime_s": [
+      20,
+      25
+    ],
     "screen_direction": "Cake travels screen-left. Pushers on the right. Street recedes to background-right; 'behind them' = background-right.",
     "hero_frame": "hero/HERO_d4d471f7.png",
     "hero_higgsfield_job": "d4d471f7-ac74-4edf-b782-b97ca4f8ba84",
     "selected_ending": null,
     "style_guide": "../OFFBEAT_CINEMA_STYLE.md",
-    "updated": "2026-10-30"
+    "updated": "2026-10-30",
+    "endings_cut": [
+      "A",
+      "B"
+    ]
   },
   "defaults": {
     "image": {
       "provider": "higgsfield",
       "model": "seedream_v5_pro",
-      "params": { "aspect_ratio": "4:3", "resolution": "2k", "batch_size": 1 }
+      "params": {
+        "aspect_ratio": "4:3",
+        "resolution": "2k",
+        "batch_size": 1
+      }
     },
     "video": {
       "provider": "higgsfield",
       "model": "seedance_2_0",
-      "params": { "aspect_ratio": "4:3", "resolution": "1080p", "mode": "std", "bitrate_mode": "high", "genre": "auto", "generate_audio": false }
+      "params": {
+        "aspect_ratio": "4:3",
+        "resolution": "1080p",
+        "mode": "std",
+        "bitrate_mode": "high",
+        "genre": "auto",
+        "generate_audio": false
+      }
     }
   },
   "continuity_library": {
     "hero": "hero/HERO_d4d471f7.png",
     "characters": {
-      "A_stripe": { "file": "characters/A_stripe.png", "look": "Orange-and-blue jersey with white side panels, royal-blue shorts with white side stripe, white tube socks, white sneakers, short dark hair." },
-      "B_tank": { "file": "characters/B_tank.png", "look": "White sleeveless vest, WHITE shorts, white socks, dark sneakers, tallest, longer dark wavy hair." },
-      "C_pusher": { "file": "characters/C_pusher.png", "look": "White tee with blue sleeve trim, blue shorts with red/white side stripes, white socks with navy/black stripes, white sneakers, dark hair." },
-      "D_lookout": { "file": "characters/D_lookout.png", "look": "Cream ringer tee with blue/red trim and red-blue cherry chest graphic, blue shorts, white socks with blue stripes, white sneakers, feathered brown hair." }
+      "A_stripe": {
+        "file": "characters/A_stripe.png",
+        "look": "Orange-and-blue jersey with white side panels, royal-blue shorts with white side stripe, white tube socks, white sneakers, short dark hair."
+      },
+      "B_tank": {
+        "file": "characters/B_tank.png",
+        "look": "White sleeveless vest, WHITE shorts, white socks, dark sneakers, tallest, longer dark wavy hair."
+      },
+      "C_pusher": {
+        "file": "characters/C_pusher.png",
+        "look": "White tee with blue sleeve trim, blue shorts with red/white side stripes, white socks with navy/black stripes, white sneakers, dark hair."
+      },
+      "D_lookout": {
+        "file": "characters/D_lookout.png",
+        "look": "Cream ringer tee with blue/red trim and red-blue cherry chest graphic, blue shorts, white socks with blue stripes, white sneakers, feathered brown hair."
+      }
     },
     "extras": {
       "doorway_bystander": "Young man, blue tee, dark trousers, in the shop doorway far left of the hero street. Not a skater.",
       "officer": "Fifties, thick dark moustache, aviator sunglasses, pale-blue short-sleeve uniform shirt, white peaked cap, plain gold wedding ring. No insignia or text. (Not yet generated.)"
     },
     "props": {
-      "cake": { "file": "references/REF_cake.png", "look": "Four tiers, blush-pink frosting, white piped swags and pearl borders, strawberry clusters on top/tier 2/tier 3, pink roses and orange-red blooms on tiers 1-2, ~1.5x skater height." },
+      "cake": {
+        "file": "references/REF_cake.png",
+        "look": "Four tiers, blush-pink frosting, white piped swags and pearl borders, strawberry clusters on top/tier 2/tier 3, pink roses and orange-red blooms on tiers 1-2, ~1.5x skater height."
+      },
       "platform": "Wide low white board riding on skateboards (see images/source/2c357194.png).",
-      "police_car": { "file": "images/source/94e5c91e.png", "look": "White 1960s-70s sedan with a single blue rotating roof beacon." }
+      "police_car": {
+        "file": "images/source/94e5c91e.png",
+        "look": "White 1960s-70s sedan with a single blue rotating roof beacon."
+      }
     },
-    "environment": { "file": "references/REF_environment_street_depth.png", "look": "Narrow Mediterranean street, cream/terracotta facades, maroon awning, overhead wires, blue and cream 1960s sedans parked, faded crossing. Late-afternoon sun from front-left, slight haze." }
+    "environment": {
+      "file": "references/REF_environment_street_depth.png",
+      "look": "Narrow Mediterranean street, cream/terracotta facades, maroon awning, overhead wires, blue and cream 1960s sedans parked, faded crossing. Late-afternoon sun from front-left, slight haze."
+    }
   },
   "shots": [
     {
@@ -65,15 +107,29 @@
       },
       "video": {
         "prompt": "Use the supplied image as the exact opening frame. Locked-off static camera on a tripod; the camera does not move at all. The four young skateboarders push the enormous pink four-tier wedding cake slowly and steadily toward screen-left across the street. The two on the right lean in and push with both hands, the one at far right rolling forward on his skateboard with one kick of his back foot; the two on the left walk alongside, guiding the cake with flat palms. The white board glides smoothly on the skateboards hidden beneath it. The cake sways very slightly over cracks in the asphalt; the strawberries and sugar flowers tremble. The young man in the shop doorway at far left watches without moving. Faint haze and dust drift in the warm sunlight. Everyone is deadpan and focused, like professional movers on a serious job. Faces, hair, outfits, cake size and decoration, the parked cars and the street stay exactly as in the frame. No cuts, no camera movement, no slow motion, no new people, no morphing. Authentic 1970s 35mm motion-picture look with natural grain.",
-        "inputs": { "start_image": "images/source/d4d471f7.png" },
-        "params": { "duration": 5 },
-        "use_range_s": [0.5, 3.5],
-        "path": null,
-        "generation_status": "not_started",
-        "continuity_score": null,
-        "approval_status": "pending"
+        "inputs": {
+          "start_image": "images/source/d4d471f7.png"
+        },
+        "params": {
+          "duration": 5
+        },
+        "use_range_s": [
+          0.5,
+          3.5
+        ],
+        "path": "videos/01_2620d149.mp4",
+        "generation_status": "generated",
+        "continuity_score": 9,
+        "approval_status": "approved",
+        "source_job": "2620d149-dbcc-44ff-b168-80043464e056",
+        "review_notes": "Slight camera drift after 3.5 s (unused).",
+        "cost_credits": 60
       },
-      "notes": "Brief suggested slight tracking; changed to locked-off so 01/03/08 read as the same frame (rule of three)."
+      "notes": "Brief suggested slight tracking; changed to locked-off so 01/03/08 read as the same frame (rule of three).",
+      "sound": [
+        "wheels",
+        "music"
+      ]
     },
     {
       "id": "02",
@@ -87,36 +143,53 @@
         "source_job": "2c357194",
         "model": "seedream_v5_pro",
         "prompt": "Low-angle tracking shot of skateboards rolling beneath the enormous cake.",
-        "inputs": ["images/source/d4d471f7.png"],
+        "inputs": [
+          "images/source/d4d471f7.png"
+        ],
         "generation_status": "generated",
         "continuity_score": 9,
         "approval_status": "approved"
       },
       "video": {
         "prompt": "Use the supplied image as the exact opening frame. Camera at ground level, handheld, tracking toward screen-left at the same speed as the group so they stay in frame. The skateboard wheels under the white board spin and rattle over the rough asphalt; the board vibrates; the enormous pink four-tier cake towers overhead against the blue sky and sways gently. The skater at right in the cream ringer T-shirt kicks off the road once with his back foot; the skater in the white T-shirt leans in and pushes with both hands; the two on the left walk briskly alongside. Small puffs of dust kick up from the wheels. Natural motion blur on the wheels and road surface only. Faces, outfits, cake design and proportions stay exactly as in the frame. No cuts, no slow motion, no new people, no morphing wheels. Authentic 1970s 35mm look.",
-        "inputs": { "start_image": "images/source/2c357194.png" },
-        "params": { "duration": 4 },
-        "use_range_s": [0.5, 2.5],
-        "path": null,
-        "generation_status": "not_started",
-        "continuity_score": null,
-        "approval_status": "pending"
+        "inputs": {
+          "start_image": "images/source/2c357194.png"
+        },
+        "params": {
+          "duration": 4
+        },
+        "use_range_s": [
+          0.5,
+          2.5
+        ],
+        "path": "videos/02_9feb94d4.mp4",
+        "generation_status": "generated",
+        "continuity_score": 9,
+        "approval_status": "approved",
+        "source_job": "9feb94d4-f9a3-4851-9cd7-6761df2db48e",
+        "review_notes": "",
+        "cost_credits": 48
       },
-      "notes": "Sky is cleaner/bluer than the hero; acceptable for a low angle. Grade slightly warmer in the edit."
+      "notes": "Sky is cleaner/bluer than the hero; acceptable for a low angle. Grade slightly warmer in the edit.",
+      "sound": [
+        "wheels_loud"
+      ]
     },
     {
       "id": "03",
       "name": "The Car",
       "act": "Pursuit",
       "purpose": "Same wide as 01, now with a police car behind them. Dread through repetition.",
-      "duration_s": 3.0,
+      "duration_s": 2.6,
       "classification": "KEEP",
       "image": {
         "path": "images/source/94e5c91e.png",
         "source_job": "94e5c91e-d80b-4965-917d-06bc364a9c54",
         "model": "seedream_v5_pro",
         "prompt": "A vintage police car suddenly turns onto the street behind them.",
-        "inputs": ["images/source/d4d471f7.png"],
+        "inputs": [
+          "images/source/d4d471f7.png"
+        ],
         "generation_status": "generated",
         "continuity_score": 9.5,
         "approval_status": "approved",
@@ -124,43 +197,79 @@
       },
       "video": {
         "prompt": "Use the supplied image as the exact opening frame. Locked-off static camera; it does not move. The four skaters keep pushing the pink cake slowly toward screen-left exactly as before. Behind them, the white police sedan with the blue roof beacon rolls forward a few metres at walking pace and stops; its blue beacon turns slowly. At first nobody notices. In the final second, the skater at far right in the cream ringer T-shirt slowly turns his head to look back over his shoulder at the car. No siren. The young man in the doorway at far left stays still. Faces, outfits, cake, parked cream car and street stay exactly as in the frame. No cuts, no camera movement, no slow motion, no new people, no morphing. Authentic 1970s 35mm look.",
-        "inputs": { "start_image": "images/source/94e5c91e.png" },
-        "params": { "duration": 5 },
-        "use_range_s": [1.5, 4.5],
-        "path": null,
-        "generation_status": "not_started",
-        "continuity_score": null,
-        "approval_status": "pending"
+        "inputs": {
+          "start_image": "images/source/94e5c91e.png"
+        },
+        "params": {
+          "duration": 5
+        },
+        "use_range_s": [
+          0.0,
+          2.6
+        ],
+        "path": "videos/03_7677fbde.mp4",
+        "generation_status": "generated",
+        "continuity_score": 7,
+        "approval_status": "approved",
+        "source_job": "7677fbde-8c32-406d-89fd-4d9608078975",
+        "review_notes": "After ~2.6 s the camera tracks left and the police car changes livery (blue-white) - trimmed out. Re-take candidate.",
+        "cost_credits": 60
       },
-      "notes": "7aa40a7e is a backup (police car less readable)."
+      "notes": "7aa40a7e is a backup (police car less readable).",
+      "sound": [
+        "wheels"
+      ]
     },
     {
       "id": "04",
       "name": "The Look",
       "act": "Pursuit",
       "purpose": "Realisation. First time we are close to faces.",
-      "duration_s": 2.5,
+      "duration_s": 3.0,
       "classification": "MISSING",
       "image": {
-        "path": null,
+        "path": "images/takes/41_0bd99837.png",
         "model": "seedream_v5_pro",
         "prompt": "A cinematic 35mm film still from the same fictional 1976 film as the reference images. Medium shot of exactly two of the four young men from the first reference. On the right, the Lookout (cream ringer T-shirt with blue and red trim and a small red-and-blue cherry graphic on the chest, blue athletic shorts, feathered brown hair) stands on his skateboard, turned to stare back over his right shoulder. On the left, the Pusher (white T-shirt with blue sleeve trim, blue shorts with red-and-white side stripes, dark hair) is bent forward with both hands on the pink frosting of the bottom cake tier, lifting his head to follow the Lookout's eyeline. Camera at chest height, 50mm lens feel, three-quarter front angle from screen-left, framing both men from mid-thigh up; the edge of the blush-pink cake with white piped swags fills the left third of frame. Behind them, softly out of focus, the same sunlit street: cream and terracotta facades, overhead wires, a parked cream 1960s sedan, and the white police sedan with a single blue roof beacon from the second reference, about fifteen metres back. Warm late-afternoon sun from front-left, slight haze, faded 1970s photochemical colour, natural film grain, soft highlight roll-off, natural skin texture. Faces, hair, outfits and cake decoration identical to the references. Exactly two people in focus, no other skaters visible, no motion blur, no modern objects, no text or logos. 4:3 aspect ratio.",
-        "inputs": ["hero/HERO_d4d471f7.png", "images/source/94e5c91e.png", "characters/D_lookout.png", "characters/C_pusher.png"],
-        "generation_status": "not_started",
-        "continuity_score": null,
-        "approval_status": "pending"
+        "inputs": [
+          "hero/HERO_d4d471f7.png",
+          "images/source/94e5c91e.png",
+          "characters/D_lookout.png",
+          "characters/C_pusher.png"
+        ],
+        "generation_status": "generated",
+        "continuity_score": 9,
+        "approval_status": "approved",
+        "source_job": "0bd99837-83c8-411a-b752-c5ce466f8af3",
+        "alternates": [
+          "images/takes/42_d296f6b6.png"
+        ]
       },
       "video": {
-        "prompt": "Use the supplied image as the exact opening frame. Static camera with very subtle handheld breathing. The Lookout keeps staring back over his shoulder, his eyes widening slightly. The Pusher follows his gaze and freezes for a beat. Then both snap their heads forward and push harder; the Lookout kicks off the road with his back foot and the cake edge in the foreground starts sliding toward screen-left. The police car in the soft background stays still, beacon turning. Deadpan, urgent, silent: no dialogue, no exaggerated expressions. Faces, outfits and cake stay exactly as in the frame. No cuts, no slow motion, no new people, no morphing. Authentic 1970s 35mm look.",
-        "inputs": { "start_image": "images/04_look.png" },
-        "params": { "duration": 4 },
-        "use_range_s": [0.0, 2.5],
-        "path": null,
-        "generation_status": "not_started",
-        "continuity_score": null,
-        "approval_status": "pending"
+        "prompt": "Use the supplied image as the exact opening frame. Static camera with very subtle handheld breathing. The young man on the right in the cream ringer T-shirt holds his deadpan stare for a beat, then turns his head to look back over his shoulder at the white police car in the background. The young man bent over the cake follows his gaze and freezes. A beat. Then both snap forward and push harder. Deadpan, urgent, silent. No cuts, no slow motion, no new people, no morphing. Authentic 1970s 35mm look.",
+        "inputs": {
+          "start_image": "images/takes/41_0bd99837.png"
+        },
+        "params": {
+          "duration": 4
+        },
+        "use_range_s": [
+          0.5,
+          3.5
+        ],
+        "path": "videos/04_1b9e26a5.mp4",
+        "generation_status": "generated",
+        "continuity_score": 8.5,
+        "approval_status": "approved",
+        "source_job": "1b9e26a5-706d-4e2a-afde-29622477d29f",
+        "review_notes": "D turns back to the car, C follows, both snap forward. Slight handheld drift.",
+        "cost_credits": 48
       },
-      "notes": "If faces drift, fall back to a Seedream 'zoom in on the two men at right' edit of 94e5c91e, which keeps identity better."
+      "notes": "If faces drift, fall back to a Seedream 'zoom in on the two men at right' edit of 94e5c91e, which keeps identity better.",
+      "classification_was": "MISSING",
+      "sound": [
+        "wheels"
+      ]
     },
     {
       "id": "05",
@@ -170,27 +279,46 @@
       "duration_s": 2.0,
       "classification": "REGENERATE",
       "image": {
-        "path": null,
+        "path": "images/takes/51_155524f1.png",
         "previous": "images/source/b82b2caf.png",
         "previous_issue": "Spin motion blur baked into still; reads as spinning, will animate badly.",
         "model": "seedream_v5_pro",
         "prompt": "Extreme close-up film still of the top tier of the same blush-pink wedding cake from the first reference: a cluster of whole and halved strawberries resting on rosettes of white piped frosting, a white pearl-border piping along the tier edge. One whole strawberry sits slightly apart at the front edge, perched on its swirl of frosting, perfectly still. Camera at tier height, 85mm macro feel, very shallow depth of field. Background: the same sunlit street out of focus, warm cream facades and grey asphalt, the soft shape of a blue parked car. Warm late-afternoon sun from front-left raking across the frosting texture, faded 1970s photochemical colour, fine 35mm grain. Frosting colour and piping style identical to the reference. Everything still and sharp: no motion blur, no spinning, no people, no text. 4:3 aspect ratio.",
-        "inputs": ["references/REF_cake.png", "images/source/b82b2caf.png"],
-        "generation_status": "not_started",
-        "continuity_score": null,
-        "approval_status": "pending"
+        "inputs": [
+          "references/REF_cake.png",
+          "images/source/b82b2caf.png"
+        ],
+        "generation_status": "generated",
+        "continuity_score": 9,
+        "approval_status": "approved",
+        "source_job": "155524f1-3305-4074-9110-236409174acc",
+        "alternates": []
       },
       "video": {
         "prompt": "Use the supplied image as the exact opening frame. Static macro camera riding with the cake. The cake is rolling, so the out-of-focus street behind drifts slowly toward screen-right. About one second in, a sharp bump: the whole tier jolts once, and the front strawberry shivers, rocks on its rosette of frosting, tilts toward the edge and settles at a precarious angle without falling. The piping stays intact and the frosting does not deform. Tense and quiet. No cuts, no slow motion, no people, no morphing. Authentic 1970s 35mm look.",
-        "inputs": { "start_image": "images/05_strawberry.png" },
-        "params": { "duration": 4 },
-        "use_range_s": [0.5, 2.5],
-        "path": null,
-        "generation_status": "not_started",
-        "continuity_score": null,
-        "approval_status": "pending"
+        "inputs": {
+          "start_image": "images/takes/51_155524f1.png"
+        },
+        "params": {
+          "duration": 4
+        },
+        "use_range_s": [
+          1.5,
+          3.5
+        ],
+        "path": "videos/05_abaa7a18.mp4",
+        "generation_status": "generated",
+        "continuity_score": 9,
+        "approval_status": "approved",
+        "source_job": "abaa7a18-b83e-4de1-82db-c3bd9db8ffab",
+        "review_notes": "Strawberry rocks and tips over on the bump.",
+        "cost_credits": 48
       },
-      "notes": "Do not animate b82b2caf (baked blur). If regeneration fails, drop 05 and cut 04 straight to 06."
+      "notes": "Do not animate b82b2caf (baked blur). If regeneration fails, drop 05 and cut 04 straight to 06.",
+      "classification_was": "REGENERATE",
+      "sound": [
+        "bump"
+      ]
     },
     {
       "id": "06",
@@ -200,27 +328,50 @@
       "duration_s": 3.5,
       "classification": "REGENERATE",
       "image": {
-        "path": null,
+        "path": "images/takes/63_201d14d8.png",
         "previous": "images/source/55405ae1.png",
         "previous_issue": "Five people (duplicate jersey behind A); D lost his cherry-graphic ringer tee.",
         "model": "seedream_v5_pro",
-        "prompt": "Edit the first reference image. Keep the composition, street, lighting, the cake and its tilt, and every pose exactly as they are. Change only two things. One: remove the second person in a blue-and-orange jersey half-hidden behind the young man at far left, so that exactly four young men are touching the cake, plus the bystander in the blue T-shirt in the shop doorway at far left; fill the gap with the street and the shop front behind. Two: the young man at far right must wear the cream ringer T-shirt with blue and red trim and the red-and-blue cherry graphic on the chest, exactly as in the second reference. Nothing else changes. No new people, no text. 4:3 aspect ratio.",
-        "inputs": ["images/source/55405ae1.png", "characters/D_lookout.png"],
-        "generation_status": "not_started",
-        "continuity_score": null,
-        "approval_status": "pending"
+        "prompt": "Edit the first reference image. Keep the composition, street, lighting, the cake and its tilt, and every pose exactly as they are. Change only two things. One: remove the second person in a blue-and-orange jersey half-hidden behind the young man at far left, so that exactly four young men are touching the cake, plus the bystander in the blue T-shirt in the shop doorway at far left; fill the gap with the street and the shop front behind. Two: the young man at far right must wear the cream ringer T-shirt with blue and red trim and the red-and-blue cherry graphic on the chest, exactly as in the second reference. Nothing else changes. No new people, no text. 4:3 aspect ratio. | Second pass (take 63, on take 62): replace the parked blue sedan with the white police sedan from 94e5c91e.",
+        "inputs": [
+          "images/source/55405ae1.png",
+          "characters/D_lookout.png"
+        ],
+        "generation_status": "generated",
+        "continuity_score": 9,
+        "approval_status": "approved",
+        "source_job": "201d14d8-831b-4658-9a00-987dcbda4068",
+        "alternates": [
+          "images/takes/62_ecb94d37.png (police car missing)",
+          "images/takes/61_d87205f1.png (REJECT: removed skater A)"
+        ]
       },
       "video": {
         "prompt": "Use the supplied image as the exact opening frame. Handheld camera at eye level with one small reactive jolt as the action starts. The enormous pink cake keeps tipping toward screen-right off the edge of its white board, continuing the tilt in the frame, slowly and heavily, as if it weighs a tonne. All four skaters lunge: the two on the left grab the low edge of the board, the two on the right throw their palms against the frosting and dig their sneakers into the asphalt, their skateboards skidding sideways under them. Faces strain but stay serious. The tilt slows and stops at a steep angle, the cake still on the board. The tiers stay stacked, the decoration intact. Faces and outfits stay exactly as in the frame. No cuts, no slow motion, no new people, no extra limbs, no morphing. Authentic 1970s 35mm look.",
-        "inputs": { "start_image": "images/06_tip.png" },
-        "params": { "duration": 5 },
-        "use_range_s": [0.0, 3.5],
-        "path": null,
-        "generation_status": "not_started",
-        "continuity_score": null,
-        "approval_status": "pending"
+        "inputs": {
+          "start_image": "images/takes/63_201d14d8.png"
+        },
+        "params": {
+          "duration": 5
+        },
+        "use_range_s": [
+          0.0,
+          3.5
+        ],
+        "path": "videos/06_6b9bcc3f.mp4",
+        "generation_status": "generated",
+        "continuity_score": 8.5,
+        "approval_status": "approved",
+        "source_job": "6b9bcc3f-2051-4b3e-a2e4-a222ce385aa3",
+        "review_notes": "",
+        "cost_credits": 60
       },
-      "notes": "Brief said 'rounds a corner'; existing frame is at the crossing - reads as a swerve away from the car. Keeps the same location (safer)."
+      "notes": "Brief said 'rounds a corner'; existing frame is at the crossing - reads as a swerve away from the car. Keeps the same location (safer).",
+      "classification_was": "REGENERATE",
+      "sound": [
+        "thud_scrape",
+        "music_stop"
+      ]
     },
     {
       "id": "07",
@@ -230,25 +381,48 @@
       "duration_s": 3.0,
       "classification": "MISSING",
       "image": {
-        "path": null,
+        "path": "images/takes/71_aae22c8f.png",
         "model": "seedream_v5_pro",
         "prompt": "Edit the first reference image into the next moment, a dead still. Same camera position, street, lighting and cake. The enormous blush-pink four-tier cake is now frozen at a 20-degree tilt, balanced on one edge of its white board, the opposite edge lifted a hand's width off the skateboards. Exactly four young men, the same ones in the same outfits, stand completely motionless around it with arms outstretched, only their fingertips touching the frosting, bodies tense, faces deadpan, holding their breath. One strawberry at the very top leans over the edge. In the background, the white police sedan with a blue roof beacon from the third reference has stopped in the street. Warm sun from front-left, slight haze, faded 1970s photochemical colour, 35mm grain. Keep all faces, outfits and cake decoration identical to the second reference. Exactly four skaters plus the doorway bystander, no extra people, no motion blur, no text. 4:3 aspect ratio.",
-        "inputs": ["images/06_tip.png", "hero/HERO_d4d471f7.png", "images/source/94e5c91e.png"],
-        "generation_status": "not_started",
-        "continuity_score": null,
-        "approval_status": "pending"
+        "inputs": [
+          "images/06_tip.png",
+          "hero/HERO_d4d471f7.png",
+          "images/source/94e5c91e.png"
+        ],
+        "generation_status": "generated",
+        "continuity_score": 9,
+        "approval_status": "approved",
+        "source_job": "aae22c8f-5382-4846-8472-f5333f25f6ff",
+        "alternates": [
+          "images/takes/72_8887c0b3.png (tilts opposite way to 06)"
+        ]
       },
       "video": {
         "prompt": "Use the supplied image as the exact opening frame. Locked-off static camera. Almost nothing moves. The cake holds its tilt. A single strawberry at the very top slowly rolls one centimetre and stops at the edge. The skaters stay frozen; only their eyes flick up to the strawberry, and one of them swallows. A faint breeze stirs the shop awning. The police car behind sits still. Total stillness, held breath. No cuts, no camera movement, no slow motion, no new people, no morphing. Authentic 1970s 35mm look.",
-        "inputs": { "start_image": "images/07_silence.png" },
-        "params": { "duration": 4 },
-        "use_range_s": [0.5, 3.5],
-        "path": null,
-        "generation_status": "not_started",
-        "continuity_score": null,
-        "approval_status": "pending"
+        "inputs": {
+          "start_image": "images/takes/71_aae22c8f.png"
+        },
+        "params": {
+          "duration": 4
+        },
+        "use_range_s": [
+          0.5,
+          3.5
+        ],
+        "path": "videos/07_0b8f1474.mp4",
+        "generation_status": "generated",
+        "continuity_score": 9,
+        "approval_status": "approved",
+        "source_job": "0b8f1474-ea8d-4665-bcbf-50304016aa85",
+        "review_notes": "Near-static tableau, as intended.",
+        "cost_credits": 48
       },
-      "notes": "Zero-cost fallback: hold the still with a 2% push-in and grain in the edit."
+      "notes": "Zero-cost fallback: hold the still with a 2% push-in and grain in the edit.",
+      "classification_was": "MISSING",
+      "sound": [
+        "silence",
+        "bird"
+      ]
     },
     {
       "id": "08A1",
@@ -256,28 +430,47 @@
       "act": "Payoff",
       "ending": "A",
       "purpose": "A fifth hand (the officer's) steadies the cake.",
-      "duration_s": 1.5,
+      "duration_s": 2.0,
       "classification": "MISSING",
       "image": {
-        "path": null,
+        "path": "images/takes/81_e182e92f.png",
         "model": "seedream_v5_pro",
         "prompt": "Close-up 35mm film still of the side of the same blush-pink four-tier cake from the first reference, with its white piped swags and pearl borders, tilted steeply. A man's hand enters from screen-right: pale-blue short-sleeved uniform shirt cuff, tanned forearm, a plain gold wedding ring. He rests one index finger gently on the frosting, steadying the cake. Background soft: the sunlit street and the white police sedan with a blue roof beacon from the second reference, its driver door open. Warm late-afternoon sun from front-left, faded 1970s photochemical colour, fine grain. No faces, no text, no motion blur. 4:3 aspect ratio.",
-        "inputs": ["references/REF_cake.png", "images/source/94e5c91e.png"],
-        "generation_status": "not_started",
-        "continuity_score": null,
-        "approval_status": "pending"
+        "inputs": [
+          "references/REF_cake.png",
+          "images/source/94e5c91e.png"
+        ],
+        "generation_status": "generated",
+        "continuity_score": 9,
+        "approval_status": "approved",
+        "source_job": "e182e92f-586c-4ea8-8575-587095b27cc0",
+        "alternates": []
       },
       "video": {
         "prompt": "Use the supplied image as the exact opening frame. Static close-up. The finger presses gently and the cake slowly rotates back to upright, moving out of the top of the frame; the finger lifts away and the hand withdraws to screen-right. Delicate, almost tender. The frosting does not deform. No cuts, no slow motion, no new people, no morphing. Authentic 1970s 35mm look.",
-        "inputs": { "start_image": "images/08A1_finger.png" },
-        "params": { "duration": 4 },
-        "use_range_s": [0.5, 2.0],
-        "path": null,
-        "generation_status": "not_started",
-        "continuity_score": null,
-        "approval_status": "pending"
+        "inputs": {
+          "start_image": "images/takes/81_e182e92f.png"
+        },
+        "params": {
+          "duration": 4
+        },
+        "use_range_s": [
+          0.0,
+          2.0
+        ],
+        "path": "videos/08A1_af81a3e9.mp4",
+        "generation_status": "generated",
+        "continuity_score": 8,
+        "approval_status": "approved",
+        "source_job": "af81a3e9-cb35-4bc3-ad31-ae04e1682950",
+        "review_notes": "Finger touches, hand withdraws; cake does not visibly right itself (reads as steadied).",
+        "cost_credits": 48
       },
-      "notes": ""
+      "notes": "",
+      "classification_was": "MISSING",
+      "sound": [
+        "creak"
+      ]
     },
     {
       "id": "08A2",
@@ -288,25 +481,78 @@
       "duration_s": 3.0,
       "classification": "MISSING",
       "image": {
-        "path": null,
+        "path": "images/takes/82_0b340823.png",
         "model": "seedream_v5_pro",
         "prompt": "Edit the first reference image. Keep the exact camera position, framing, street, light, the bystander in the doorway, the cake, and all four young men with their faces and outfits. Change: the white police sedan with a single blue roof beacon from the second reference now drives ahead of the cake, entering frame-left in front of it and leading it across the crossing, its beacon lit; we see its rear half and driver's window. A uniformed officer (a man in his fifties with a thick dark moustache, aviator sunglasses, a pale-blue short-sleeved uniform shirt and a white peaked cap) rests his arm out of the driver's window, palm raised, calmly waving the street clear. The four skaters push the upright cake behind the car in tidy, dignified formation, posture upright, faces composed and quietly proud. Exactly four skaters, one officer, one bystander, no other people, no text or insignia. Same warm front-left sun, faded 1970s colour, 35mm grain. 4:3 aspect ratio.",
-        "inputs": ["hero/HERO_d4d471f7.png", "images/source/94e5c91e.png"],
-        "generation_status": "not_started",
-        "continuity_score": null,
-        "approval_status": "pending"
+        "inputs": [
+          "hero/HERO_d4d471f7.png",
+          "images/source/94e5c91e.png"
+        ],
+        "generation_status": "generated",
+        "continuity_score": 8.5,
+        "approval_status": "approved",
+        "source_job": "0b340823-af45-4fd3-aec0-f56df18b8778",
+        "alternates": [
+          "images/takes/83_1621d684.png (REJECT: car hides cake, extra figure)"
+        ]
       },
       "video": {
         "prompt": "Use the supplied image as the exact opening frame. Locked-off static camera, identical to the opening shot. The police car rolls slowly toward screen-left, leading the procession, blue beacon turning; the officer's arm out of the window makes one slow, calm waving gesture. The skaters push the upright cake behind it at the same calm pace, chins up. The young man in the doorway slowly raises one hand in a small salute. Dignified, deadpan, ceremonial. Faces, outfits and cake stay exactly as in the frame. No cuts, no camera movement, no slow motion, no new people, no morphing. Authentic 1970s 35mm look.",
-        "inputs": { "start_image": "images/08A2_escort.png" },
-        "params": { "duration": 5 },
-        "use_range_s": [0.5, 3.5],
-        "path": null,
-        "generation_status": "not_started",
-        "continuity_score": null,
-        "approval_status": "pending"
+        "inputs": {
+          "start_image": "images/takes/82_0b340823.png"
+        },
+        "params": {
+          "duration": 5
+        },
+        "use_range_s": [
+          0.5,
+          3.5
+        ],
+        "path": "videos/08A2_336363ee.mp4",
+        "generation_status": "generated",
+        "continuity_score": 8,
+        "approval_status": "approved",
+        "source_job": "336363ee-6cee-4bf3-a4ff-9ae4ff0f10e4",
+        "review_notes": "A small graphic appears on the car bonnet; car leads cake out of frame.",
+        "cost_credits": 60
       },
-      "notes": "Recommended ending."
+      "notes": "Recommended ending.",
+      "classification_was": "MISSING",
+      "sound": [
+        "siren",
+        "wheels"
+      ]
+    },
+    {
+      "id": "08B0",
+      "name": "Ending B - Black beat",
+      "act": "Payoff",
+      "ending": "B",
+      "purpose": "One beat of black and silence while the cake falls off-screen.",
+      "duration_s": 0.7,
+      "classification": "KEEP",
+      "black": true,
+      "image": {
+        "path": null,
+        "generation_status": "n/a",
+        "approval_status": "approved"
+      },
+      "video": {
+        "path": null,
+        "prompt": "(black)",
+        "inputs": {},
+        "params": {},
+        "use_range_s": [
+          0,
+          0.7
+        ],
+        "generation_status": "n/a",
+        "approval_status": "approved"
+      },
+      "notes": "",
+      "sound": [
+        "silence"
+      ]
     },
     {
       "id": "08B",
@@ -317,25 +563,46 @@
       "duration_s": 4.5,
       "classification": "MISSING",
       "image": {
-        "path": null,
+        "path": "images/takes/84_e7da4cbf.png",
         "model": "seedream_v5_pro",
         "prompt": "A cinematic 35mm film still. Locked frontal shot at bonnet height of the white 1970s police sedan with a single blue roof beacon from the second reference, stopped in the same sunlit street as the first reference. The same enormous blush-pink four-tier cake has landed upright on its bonnet, its bottom tier pressed against the windshield, pink and white frosting smeared thickly across the glass; the upper tiers and strawberries are still intact. Behind the glass, barely visible through one small clean patch, the officer (a man in his fifties with a thick dark moustache, aviator sunglasses, a pale-blue uniform shirt and a white peaked cap) sits perfectly still, hands on the wheel. At the edges of frame, two of the skaters stand frozen in shock. Warm late-afternoon sun from front-left, faded 1970s photochemical colour, 35mm grain. No text, no insignia, no motion blur. 4:3 aspect ratio.",
-        "inputs": ["hero/HERO_d4d471f7.png", "images/source/94e5c91e.png", "references/REF_cake.png"],
-        "generation_status": "not_started",
-        "continuity_score": null,
-        "approval_status": "pending"
+        "inputs": [
+          "hero/HERO_d4d471f7.png",
+          "images/source/94e5c91e.png",
+          "references/REF_cake.png"
+        ],
+        "generation_status": "generated",
+        "continuity_score": 9,
+        "approval_status": "approved",
+        "source_job": "e7da4cbf-824a-435b-8ed4-c7ff3da05953",
+        "alternates": []
       },
       "video": {
         "prompt": "Use the supplied image as the exact opening frame. Locked-off static camera. Two seconds of total stillness. Then the windshield wipers switch on: they sweep once, slowly, through the frosting, clearing two arcs and revealing the officer's unmoving, deadpan face behind the glass. They sweep a second time. He does not react. The cake on the bonnet stays upright and keeps its shape. No cuts, no slow motion, no new people, no morphing. Authentic 1970s 35mm look.",
-        "inputs": { "start_image": "images/08B_wipers.png" },
-        "params": { "duration": 5 },
-        "use_range_s": [0.0, 4.5],
-        "path": null,
-        "generation_status": "not_started",
-        "continuity_score": null,
-        "approval_status": "pending"
+        "inputs": {
+          "start_image": "images/takes/84_e7da4cbf.png"
+        },
+        "params": {
+          "duration": 5
+        },
+        "use_range_s": [
+          0.0,
+          4.5
+        ],
+        "path": "videos/08B_97a57346.mp4",
+        "generation_status": "generated",
+        "continuity_score": 9,
+        "approval_status": "approved",
+        "source_job": "97a57346-22ec-47d9-98df-4dd84fcd433e",
+        "review_notes": "Wipers sweep the frosting twice; officer unmoved.",
+        "cost_credits": 60
       },
-      "notes": "High risk. Test the still first."
+      "notes": "High risk. Test the still first.",
+      "classification_was": "MISSING",
+      "sound": [
+        "silence",
+        "wipers"
+      ]
     },
     {
       "id": "08C",
@@ -349,16 +616,30 @@
         "path": null,
         "model": "seedream_v5_pro",
         "prompt": "A cinematic 35mm film still in the same street as the first reference, the camera turned to face the shopfront under the maroon awning. The same enormous blush-pink four-tier cake stands upright, pressed flush against the shop window like a display. Exactly four young men, the same ones in the same outfits, pose rigidly beside it like shop mannequins: the one in the orange-and-blue jersey with one hand on his hip, the tall one in the white vest with arms folded, the one in the white T-shirt presenting the cake with an open palm, the one in the cream ringer T-shirt staring into the distance. In the soft foreground, the white police sedan with a blue roof beacon from the second reference rolls past, the moustached officer in aviator sunglasses glancing at the cake through his open window. Warm late-afternoon sun from front-left, faded 1970s colour, 35mm grain. No text beyond the existing shop sign, no extra people. 4:3 aspect ratio.",
-        "inputs": ["hero/HERO_d4d471f7.png", "images/source/94e5c91e.png", "characters/A_stripe.png", "characters/B_tank.png", "characters/C_pusher.png", "characters/D_lookout.png"],
+        "inputs": [
+          "hero/HERO_d4d471f7.png",
+          "images/source/94e5c91e.png",
+          "characters/A_stripe.png",
+          "characters/B_tank.png",
+          "characters/C_pusher.png",
+          "characters/D_lookout.png"
+        ],
         "generation_status": "not_started",
         "continuity_score": null,
         "approval_status": "pending"
       },
       "video": {
         "prompt": "Use the supplied image as the exact opening frame. Locked-off static camera. The police car glides slowly through the foreground toward screen-right and out of frame; the officer gives the cake a small, approving nod. The four skaters stay perfectly still in their poses. Once the car is gone, the skater in the cream ringer T-shirt slowly reaches up, takes one strawberry from the cake and eats it, still staring straight ahead. No cuts, no slow motion, no new people, no morphing. Authentic 1970s 35mm look.",
-        "inputs": { "start_image": "images/08C_display.png" },
-        "params": { "duration": 5 },
-        "use_range_s": [0.0, 4.5],
+        "inputs": {
+          "start_image": "images/08C_display.png"
+        },
+        "params": {
+          "duration": 5
+        },
+        "use_range_s": [
+          0.0,
+          4.5
+        ],
         "path": null,
         "generation_status": "not_started",
         "continuity_score": null,
@@ -369,13 +650,41 @@
   ],
   "archive": {
     "rejected": [
-      { "path": "images/source/16859572.png", "reason": "Five skaters, duplicate jersey, cake moving with nobody touching it, cake shrunk." },
-      { "path": "images/source/5e2ee19d.png", "reason": "Different cast and three tiers." },
-      { "path": "images/source/4b979e27.png", "reason": "Different cast; stretched wheels." },
-      { "path": "images/source/0172e2b5.png", "reason": "Different cast. Possible style reference." }
+      {
+        "path": "images/source/16859572.png",
+        "reason": "Five skaters, duplicate jersey, cake moving with nobody touching it, cake shrunk."
+      },
+      {
+        "path": "images/source/5e2ee19d.png",
+        "reason": "Different cast and three tiers."
+      },
+      {
+        "path": "images/source/4b979e27.png",
+        "reason": "Different cast; stretched wheels."
+      },
+      {
+        "path": "images/source/0172e2b5.png",
+        "reason": "Different cast. Possible style reference."
+      }
     ],
     "optional": [
-      { "path": "images/source/7aa40a7e.png", "reason": "Backup for shot 03." }
+      {
+        "path": "images/source/7aa40a7e.png",
+        "reason": "Backup for shot 03."
+      }
     ]
+  },
+  "generation_log": {
+    "images": {
+      "model": "seedream_v5_pro",
+      "count": 12,
+      "credits_each": 2.5
+    },
+    "videos": {
+      "model": "seedance_2_0 1080p",
+      "count": 10,
+      "note": "5 s = 60 credits, 4 s = 48 credits (preflight quote)"
+    },
+    "balance_before": 2168.98
   }
 }

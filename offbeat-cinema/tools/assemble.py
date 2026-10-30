@@ -35,6 +35,8 @@ def main():
     ap.add_argument("--ending", default=None, help="A, B or C (defaults to project.selected_ending, else A)")
     ap.add_argument("--out", default=None)
     ap.add_argument("--use-pending-video", action="store_true", help="include generated clips not yet approved")
+    ap.add_argument("--no-audio", action="store_true")
+    ap.add_argument("--no-finish", action="store_true", help="skip the grain/vignette finish")
     a = ap.parse_args()
 
     root = Path(a.project).resolve()
@@ -53,7 +55,11 @@ def main():
             v = s["video"]
             ok = v.get("approval_status") == "approved" or (a.use_pending_video and v.get("generation_status") == "generated")
             still = still_for(s)
-            if v.get("path") and ok and (root / v["path"]).exists():
+            if s.get("black"):
+                run(["ffmpeg", "-y", "-f", "lavfi", "-i", f"color=c=black:s={w}x{h}:r={fps}:d={dur}",
+                     "-vf", "format=yuv420p", "-c:v", "libx264", "-crf", "16", str(part)])
+                src = "black"
+            elif v.get("path") and ok and (root / v["path"]).exists():
                 t0, t1 = v["use_range_s"]
                 run(["ffmpeg", "-y", "-ss", str(t0), "-t", str(t1 - t0), "-i", str(root / v["path"]),
                      "-vf", norm, "-an", "-c:v", "libx264", "-crf", "16", str(part)])
@@ -79,10 +85,15 @@ def main():
         out = root / (a.out or f"edits/rough_cut_ending{ending}.mp4")
         out.parent.mkdir(parents=True, exist_ok=True)
         cmd = ["ffmpeg", "-y", "-f", "concat", "-safe", "0", "-i", str(lst)]
-        mix = root / "audio" / "mix.wav"
-        if mix.exists():
+        mix = root / "audio" / f"mix_ending{ending}.wav"
+        if not mix.exists():
+            mix = root / "audio" / "mix.wav"
+        if mix.exists() and not a.no_audio:
             cmd += ["-i", str(mix), "-map", "0:v", "-map", "1:a", "-c:a", "aac", "-b:a", "256k", "-shortest"]
-        cmd += ["-c:v", "libx264", "-crf", "16", "-preset", "slow", "-pix_fmt", "yuv420p", "-movflags", "+faststart", str(out)]
+        if not a.no_finish:
+            # unify the clips: light temporal grain + soft vignette (the 35mm finish)
+            cmd += ["-vf", "noise=alls=7:allf=t,vignette=angle=PI/5,format=yuv420p"]
+        cmd += ["-c:v", "libx264", "-crf", "17", "-maxrate", "14M", "-bufsize", "28M", "-preset", "slow", "-pix_fmt", "yuv420p", "-movflags", "+faststart", str(out)]
         run(cmd)
         print(f"-> {out}")
 

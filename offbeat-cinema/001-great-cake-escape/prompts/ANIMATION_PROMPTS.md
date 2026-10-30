@@ -31,9 +31,9 @@ Use the supplied image as the exact opening frame. Camera at ground level, handh
 ```
 
 ## 03 — The Car (KEEP)
-*Pursuit · 3.0 s · Same wide as 01, now with a police car behind them. Dread through repetition.*
+*Pursuit · 2.6 s · Same wide as 01, now with a police car behind them. Dread through repetition.*
 
-**Params:** `{"aspect_ratio": "4:3", "resolution": "1080p", "mode": "std", "bitrate_mode": "high", "genre": "auto", "generate_audio": false, "duration": 5}` · **use:** 1.5–4.5 s
+**Params:** `{"aspect_ratio": "4:3", "resolution": "1080p", "mode": "std", "bitrate_mode": "high", "genre": "auto", "generate_audio": false, "duration": 5}` · **use:** 0.0–2.6 s
 
 **Inputs:**
 - `start_image`: `images/source/94e5c91e.png`
@@ -43,24 +43,24 @@ Use the supplied image as the exact opening frame. Locked-off static camera; it 
 ```
 
 ## 04 — The Look (MISSING)
-*Pursuit · 2.5 s · Realisation. First time we are close to faces.*
+*Pursuit · 3.0 s · Realisation. First time we are close to faces.*
 
-**Params:** `{"aspect_ratio": "4:3", "resolution": "1080p", "mode": "std", "bitrate_mode": "high", "genre": "auto", "generate_audio": false, "duration": 4}` · **use:** 0.0–2.5 s
+**Params:** `{"aspect_ratio": "4:3", "resolution": "1080p", "mode": "std", "bitrate_mode": "high", "genre": "auto", "generate_audio": false, "duration": 4}` · **use:** 0.5–3.5 s
 
 **Inputs:**
-- `start_image`: `images/04_look.png`
+- `start_image`: `images/takes/41_0bd99837.png`
 
 ```text
-Use the supplied image as the exact opening frame. Static camera with very subtle handheld breathing. The Lookout keeps staring back over his shoulder, his eyes widening slightly. The Pusher follows his gaze and freezes for a beat. Then both snap their heads forward and push harder; the Lookout kicks off the road with his back foot and the cake edge in the foreground starts sliding toward screen-left. The police car in the soft background stays still, beacon turning. Deadpan, urgent, silent: no dialogue, no exaggerated expressions. Faces, outfits and cake stay exactly as in the frame. No cuts, no slow motion, no new people, no morphing. Authentic 1970s 35mm look.
+Use the supplied image as the exact opening frame. Static camera with very subtle handheld breathing. The young man on the right in the cream ringer T-shirt holds his deadpan stare for a beat, then turns his head to look back over his shoulder at the white police car in the background. The young man bent over the cake follows his gaze and freezes. A beat. Then both snap forward and push harder. Deadpan, urgent, silent. No cuts, no slow motion, no new people, no morphing. Authentic 1970s 35mm look.
 ```
 
 ## 05 — The Strawberry (REGENERATE)
 *Close call · 2.0 s · Suspense insert; small wobble before the big wobble (match cut into 06).*
 
-**Params:** `{"aspect_ratio": "4:3", "resolution": "1080p", "mode": "std", "bitrate_mode": "high", "genre": "auto", "generate_audio": false, "duration": 4}` · **use:** 0.5–2.5 s
+**Params:** `{"aspect_ratio": "4:3", "resolution": "1080p", "mode": "std", "bitrate_mode": "high", "genre": "auto", "generate_audio": false, "duration": 4}` · **use:** 1.5–3.5 s
 
 **Inputs:**
-- `start_image`: `images/05_strawberry.png`
+- `start_image`: `images/takes/51_155524f1.png`
 
 ```text
 Use the supplied image as the exact opening frame. Static macro camera riding with the cake. The cake is rolling, so the out-of-focus street behind drifts slowly toward screen-right. About one second in, a sharp bump: the whole tier jolts once, and the front strawberry shivers, rocks on its rosette of frosting, tilts toward the edge and settles at a precarious angle without falling. The piping stays intact and the frosting does not deform. Tense and quiet. No cuts, no slow motion, no people, no morphing. Authentic 1970s 35mm look.
@@ -72,7 +72,7 @@ Use the supplied image as the exact opening frame. Static macro camera riding wi
 **Params:** `{"aspect_ratio": "4:3", "resolution": "1080p", "mode": "std", "bitrate_mode": "high", "genre": "auto", "generate_audio": false, "duration": 5}` · **use:** 0.0–3.5 s
 
 **Inputs:**
-- `start_image`: `images/06_tip.png`
+- `start_image`: `images/takes/63_201d14d8.png`
 
 ```text
 Use the supplied image as the exact opening frame. Handheld camera at eye level with one small reactive jolt as the action starts. The enormous pink cake keeps tipping toward screen-right off the edge of its white board, continuing the tilt in the frame, slowly and heavily, as if it weighs a tonne. All four skaters lunge: the two on the left grab the low edge of the board, the two on the right throw their palms against the frosting and dig their sneakers into the asphalt, their skateboards skidding sideways under them. Faces strain but stay serious. The tilt slows and stops at a steep angle, the cake still on the board. The tiers stay stacked, the decoration intact. Faces and outfits stay exactly as in the frame. No cuts, no slow motion, no new people, no extra limbs, no morphing. Authentic 1970s 35mm look.
@@ -84,19 +84,19 @@ Use the supplied image as the exact opening frame. Handheld camera at eye level 
 **Params:** `{"aspect_ratio": "4:3", "resolution": "1080p", "mode": "std", "bitrate_mode": "high", "genre": "auto", "generate_audio": false, "duration": 4}` · **use:** 0.5–3.5 s
 
 **Inputs:**
-- `start_image`: `images/07_silence.png`
+- `start_image`: `images/takes/71_aae22c8f.png`
 
 ```text
 Use the supplied image as the exact opening frame. Locked-off static camera. Almost nothing moves. The cake holds its tilt. A single strawberry at the very top slowly rolls one centimetre and stops at the edge. The skaters stay frozen; only their eyes flick up to the strawberry, and one of them swallows. A faint breeze stirs the shop awning. The police car behind sits still. Total stillness, held breath. No cuts, no camera movement, no slow motion, no new people, no morphing. Authentic 1970s 35mm look.
 ```
 
 ## 08A1 — Ending A - The Finger (MISSING)
-*Payoff · 1.5 s · A fifth hand (the officer's) steadies the cake.*
+*Payoff · 2.0 s · A fifth hand (the officer's) steadies the cake.*
 
-**Params:** `{"aspect_ratio": "4:3", "resolution": "1080p", "mode": "std", "bitrate_mode": "high", "genre": "auto", "generate_audio": false, "duration": 4}` · **use:** 0.5–2.0 s
+**Params:** `{"aspect_ratio": "4:3", "resolution": "1080p", "mode": "std", "bitrate_mode": "high", "genre": "auto", "generate_audio": false, "duration": 4}` · **use:** 0.0–2.0 s
 
 **Inputs:**
-- `start_image`: `images/08A1_finger.png`
+- `start_image`: `images/takes/81_e182e92f.png`
 
 ```text
 Use the supplied image as the exact opening frame. Static close-up. The finger presses gently and the cake slowly rotates back to upright, moving out of the top of the frame; the finger lifts away and the hand withdraws to screen-right. Delicate, almost tender. The frosting does not deform. No cuts, no slow motion, no new people, no morphing. Authentic 1970s 35mm look.
@@ -108,10 +108,22 @@ Use the supplied image as the exact opening frame. Static close-up. The finger p
 **Params:** `{"aspect_ratio": "4:3", "resolution": "1080p", "mode": "std", "bitrate_mode": "high", "genre": "auto", "generate_audio": false, "duration": 5}` · **use:** 0.5–3.5 s
 
 **Inputs:**
-- `start_image`: `images/08A2_escort.png`
+- `start_image`: `images/takes/82_0b340823.png`
 
 ```text
 Use the supplied image as the exact opening frame. Locked-off static camera, identical to the opening shot. The police car rolls slowly toward screen-left, leading the procession, blue beacon turning; the officer's arm out of the window makes one slow, calm waving gesture. The skaters push the upright cake behind it at the same calm pace, chins up. The young man in the doorway slowly raises one hand in a small salute. Dignified, deadpan, ceremonial. Faces, outfits and cake stay exactly as in the frame. No cuts, no camera movement, no slow motion, no new people, no morphing. Authentic 1970s 35mm look.
+```
+
+## 08B0 — Ending B - Black beat (KEEP)
+*Payoff · 0.7 s · One beat of black and silence while the cake falls off-screen.*
+
+**Params:** `{"aspect_ratio": "4:3", "resolution": "1080p", "mode": "std", "bitrate_mode": "high", "genre": "auto", "generate_audio": false}` · **use:** 0–0.7 s
+
+**Inputs:**
+
+
+```text
+(black)
 ```
 
 ## 08B — Ending B - The Wipers (MISSING)
@@ -120,7 +132,7 @@ Use the supplied image as the exact opening frame. Locked-off static camera, ide
 **Params:** `{"aspect_ratio": "4:3", "resolution": "1080p", "mode": "std", "bitrate_mode": "high", "genre": "auto", "generate_audio": false, "duration": 5}` · **use:** 0.0–4.5 s
 
 **Inputs:**
-- `start_image`: `images/08B_wipers.png`
+- `start_image`: `images/takes/84_e7da4cbf.png`
 
 ```text
 Use the supplied image as the exact opening frame. Locked-off static camera. Two seconds of total stillness. Then the windshield wipers switch on: they sweep once, slowly, through the frosting, clearing two arcs and revealing the officer's unmoving, deadpan face behind the glass. They sweep a second time. He does not react. The cake on the bonnet stays upright and keeps its shape. No cuts, no slow motion, no new people, no morphing. Authentic 1970s 35mm look.
