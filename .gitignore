@@ -1,3 +1,4 @@
 .DS_Store
 __pycache__/
 offbeat-cinema/*/audio/mix.wav
+offbeat-cinema/*/references/uploads_*/

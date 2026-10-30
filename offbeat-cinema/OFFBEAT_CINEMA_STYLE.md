@@ -55,9 +55,38 @@ title-card clichés, captions burned into the master.
 5. **Repeat compositions for comedy.** A locked wide shown twice with one thing changed is
    cheaper to generate, safer for continuity, and funnier than a new angle.
 6. **No baked motion blur in start frames.** A still that already contains motion blur
-   animates badly. Start frames are clean, at rest, at the moment *before* the action.
-7. **One shot per video generation.** No multi-cut prompts unless deliberately experimenting.
-8. **Few, deliberate attempts.** 1–2 takes per shot, reviewed, before generating more.
+   animates badly.
+7. **Few, deliberate attempts.** Draft at 720p (≈4.5 credits/s), review, and only then
+   render the winner at 1080p (≈12 credits/s).
+
+## 4b. Motion & camera grammar (learned from the references, 2026-10-30)
+
+Rough cut v1 looked like animated photographs: locked cameras, posed start frames,
+prompts that were mostly "don't". The references (`001-great-cake-escape/references/
+REFERENCE_ANALYSIS.md`) and the two 720p tests settled these rules:
+
+1. **The camera belongs to someone.** A passer-by, a paparazzo, someone on a balcony. It's
+   handheld, it reacts, and it arrives a little late. Crash zooms and fast push-ins are
+   allowed; random orbits are not.
+2. **Something travels through every shot.** Subjects enter, cross and leave frame.
+   Nobody "sways in place".
+3. **Foreground life.** Put people, objects or architecture between the lens and the
+   subject: a newspaper reader, a cyclist, a pillar, a shoulder.
+4. **Occlusion is the cut.** A hand over the lens, a door closing or a body passing makes
+   the next shot feel motivated.
+5. **One event per shot, cut fast.** A cut every 0.7–2.5 s. Scale moves wide → medium →
+   close, then jumps back out to a big wide.
+6. **Multi-shot generations.** Seedance 2.0 reads tagged shots (`[Shot 1, handheld wide] …`)
+   as separate moments and keeps the cast consistent across them. Write a whole scene
+   (10–15 s, 3–5 shots) per generation, using approved stills as `image_references`.
+   Use a `start_image` only when the first frame must match exactly, and then describe
+   the motion boldly.
+7. **Stacked prompt order:** mood/lighting → environment → characters → tagged shots
+   (each one: framing + camera behaviour + what happens) → sound. Keep continuity
+   constraints to one line; the reference images carry identity.
+8. **Native audio on.** Design and replace sound in the edit later, but never ship silent
+   clips with synthetic placeholders.
+9. **No added vignette.** Grain only if the clip lacks it.
 
 ## 5. Prompt templates
 
